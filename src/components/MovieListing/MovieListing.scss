@@ -1,0 +1,50 @@
+@import "../../common/colors.scss";
+
+.movie-list,
+.show-list {
+  margin: 40px 0px;
+  h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    border-left: 4px solid #e50914;
+    padding-left: 10px;
+  }
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  color: #fff;
+  
+  h2 {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-left-color: #e50914;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

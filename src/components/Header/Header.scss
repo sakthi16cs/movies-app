@@ -1,0 +1,97 @@
+@import "../../common/colors.scss";
+
+.header {
+  background-color: $secondary-color;
+  height: 72px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: $font-primary;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  a {
+    color: $font-primary;
+    text-decoration: none;
+  }
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    
+    input, select {
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      outline: none;
+      background: rgba(255,255,255,0.1);
+      color: $font-primary;
+      transition: all 0.3s ease;
+      
+      &:focus {
+        background: rgba(255,255,255,0.2);
+      }
+      
+      option {
+        background: $secondary-color;
+        color: $font-primary;
+      }
+    }
+    
+    .search-input {
+      width: 60%;
+      border-radius: 20px 0 0 20px;
+    }
+    
+    .year-input {
+      width: 25%;
+      border-left: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+    }
+    
+    button {
+      padding: 8px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #e50914; /* Netflix red accent */
+      color: white;
+      border: none;
+      border-radius: 0 20px 20px 0;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      
+      &:hover {
+        background: #f40612;
+      }
+    }
+  }
+}
+
+.user-image,
+.user-image img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
