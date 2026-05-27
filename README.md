@@ -2,6 +2,9 @@
 
 A React-based movie search application built with Redux Toolkit, React Router, and the OMDB API. This app allows users to search for movies, view detailed information, and explore movie listings.
 
+Deployment Link:
+https://skmoviesite.netlify.app/
+
 ## Features
 
 - 🎬 Search movies by title
